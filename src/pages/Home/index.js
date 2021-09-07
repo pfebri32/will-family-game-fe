@@ -40,14 +40,14 @@ const index = () => {
     <div className="container-fluid screen flex-vertical flex-center">
       <div>
         <div className={styles.title}>WILL FAMILY GAME</div>
-        <div style={{ marginTop: 15 }}>
+        <div className="flex-vertical flex-center" style={{ marginTop: 15 }}>
           <Button onClick={onStartHandler}>Start Game</Button>
           <Button onClick={onOptionsHandler}>Options</Button>
           <Button onClick={onAboutsHandlers}>Abouts</Button>
         </div>
         <div style={{ marginTop: 15 }}>
           <div className="align-center font-weight-500">Share It</div>
-          <div className="flex flex-center">
+          <div className="flex-horizontal flex-center">
             <SocialButton
               icon={faFacebookSquare}
               onClick={onFacebookShareHandlers}
