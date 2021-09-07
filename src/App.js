@@ -1,10 +1,10 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.css";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.css';
 
 // Pages.
-import Home from "./pages/Home";
-import About from "./pages/About";
-import PageNotFound from "./pages/PageNotFound";
+import Home from './pages/Home';
+import About from './pages/About';
+import PageNotFound from './pages/PageNotFound';
 
 const App = () => {
   return (

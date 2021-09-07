@@ -49,6 +49,10 @@ pre {
   justify-content: center;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .font-weight-500 {
   font-weight: 500;
 }
