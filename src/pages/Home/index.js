@@ -43,7 +43,7 @@ const index = () => {
         <div className="flex-vertical flex-center" style={{ marginTop: 15 }}>
           <Button onClick={onStartHandler}>Start Game</Button>
           <Button onClick={onOptionsHandler}>Options</Button>
-          <Button onClick={onAboutsHandlers}>Abouts</Button>
+          <Button onClick={onAboutsHandlers}>About</Button>
         </div>
         <div style={{ marginTop: 15 }}>
           <div className="align-center font-weight-500">Share It</div>

@@ -3,6 +3,7 @@ import "./App.css";
 
 // Pages.
 import Home from "./pages/Home";
+import About from "./pages/About";
 import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} exact />
         <Route path="*" component={PageNotFound} />
       </Switch>
     </BrowserRouter>
