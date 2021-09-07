@@ -32,8 +32,7 @@ const index = () => {
                 alt="Febriansyah Putra"
               />
               <div
-                className="absolute coverage flex-vertical flex-center"
-                style={{ backgroundColor: 'rgba(255, 175, 204, .5)' }}
+                className={`absolute coverage flex-vertical flex-center ${styles.overlay}`}
               >
                 <div className="flex-horizontal">
                   <SocialButton

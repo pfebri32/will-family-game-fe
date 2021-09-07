@@ -2,7 +2,13 @@
   border-radius: 2rem;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 250ms ease-in-out;
 
   top: 1rem;
   left: 1rem;
+}
+
+.button:hover {
+  background-color: #ffafcc;
+  color: #fff;
 }

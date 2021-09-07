@@ -20,6 +20,25 @@ img {
   text-align: center;
 }
 
+.overlay {
+  transition: 250ms ease-in-out;
+}
+
+.overlay:hover {
+  background-color: rgba(255, 175, 204, 0.5);
+}
+
+.overlay > div {
+  opacity: 0;
+  pointer-events: none;
+  transition: 250ms ease-in-out;
+}
+
+.overlay:hover > div {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .title {
   font-size: 2rem;
   font-weight: 700;
