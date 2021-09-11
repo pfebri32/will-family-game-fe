@@ -4,18 +4,14 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import styles from './index.module.css';
+import styles from './Home.module.css';
 
 // Components
-import Button from '../../components/partials/Buttons/ButtonA';
-import SocialButton from '../../components/partials/SocialButton';
+import Button from '../components/partials/Buttons/ButtonA';
+import SocialButton from '../components/partials/Buttons/SocialButton';
 
-const index = () => {
-  // Handlers
-  const onStartHandler = () => {
-    console.log('Start Game');
-  };
-
+const Home = () => {
+  // Handlers.
   const onOptionsHandler = () => {
     console.log('Options');
   };
@@ -41,7 +37,9 @@ const index = () => {
       <div>
         <div className={styles.title}>WILL FAMILY GAME</div>
         <div className="flex-vertical flex-center" style={{ marginTop: 15 }}>
-          <Button onClick={onStartHandler}>Start Game</Button>
+          <Button to="/pick" type="link">
+            Start Game
+          </Button>
           <Button onClick={onOptionsHandler}>Options</Button>
           <Button onClick={onAboutsHandlers}>About</Button>
         </div>
@@ -70,4 +68,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;

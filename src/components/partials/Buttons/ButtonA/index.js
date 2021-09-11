@@ -1,13 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './index.module.css';
 
-const index = ({ children, ...rest }) => {
+const index = ({ children, type, ...rest }) => {
   const renderChildren = () =>
     children.split('').map((c, i) => <pre key={i}>{c}</pre>);
   return (
-    <div className={styles.button} {...rest}>
-      {renderChildren()}
-    </div>
+    <>
+      {type === 'link' ? (
+        <Link className={styles.button} {...rest}>
+          {renderChildren()}
+        </Link>
+      ) : (
+        <div className={styles.button} {...rest}>
+          {renderChildren()}
+        </div>
+      )}
+    </>
   );
 };
 

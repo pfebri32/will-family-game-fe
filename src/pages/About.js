@@ -4,13 +4,13 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import styles from './index.module.css';
+import styles from './About.module.css';
 
 // Components
-import ReturnButton from '../../components/partials/ReturnButton';
-import SocialButton from '../../components/partials/SocialButton';
+import ReturnButton from '../components/partials/Buttons/ReturnButton';
+import SocialButton from '../components/partials/Buttons/SocialButton';
 
-const index = () => {
+const About = () => {
   return (
     <>
       <ReturnButton />
@@ -60,4 +60,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;
