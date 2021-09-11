@@ -1,39 +1,39 @@
-import React from "react";
+import React from 'react';
 import {
   faFacebookSquare,
   faInstagramSquare,
   faTwitterSquare,
-} from "@fortawesome/free-brands-svg-icons";
-import styles from "./index.module.css";
+} from '@fortawesome/free-brands-svg-icons';
+import styles from './index.module.css';
 
 // Components
-import Button from "../../components/partials/ButtonA";
-import SocialButton from "../../components/partials/SocialButton";
+import Button from '../../components/partials/Buttons/ButtonA';
+import SocialButton from '../../components/partials/SocialButton';
 
 const index = () => {
   // Handlers
   const onStartHandler = () => {
-    console.log("Start Game");
+    console.log('Start Game');
   };
 
   const onOptionsHandler = () => {
-    console.log("Options");
+    console.log('Options');
   };
 
   const onAboutsHandlers = () => {
-    console.log("Abouts");
+    console.log('Abouts');
   };
 
   const onFacebookShareHandlers = () => {
-    console.log("Facebook Share");
+    console.log('Facebook Share');
   };
 
   const onInstagramShareHandlers = () => {
-    console.log("Instagram Share");
+    console.log('Instagram Share');
   };
 
   const onTwitterShareHandlers = () => {
-    console.log("Twitter Share");
+    console.log('Twitter Share');
   };
 
   return (
