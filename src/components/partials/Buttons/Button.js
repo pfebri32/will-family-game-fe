@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './index.module.css';
+import styles from './Button.module.css';
 
 const index = ({ children, type, ...rest }) => {
   const renderChildren = () =>

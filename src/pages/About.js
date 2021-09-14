@@ -15,7 +15,7 @@ const About = () => {
     <>
       <ReturnButton />
       <div
-        className="container-fluid flex-vertical flex-center screen"
+        className="container-fluid flex-column flex-center screen"
         style={{ marginTop: '2rem', marginBottom: '2rem' }}
       >
         <div className={styles.title}>Hello, developers here!</div>
@@ -32,7 +32,7 @@ const About = () => {
                 alt="Febriansyah Putra"
               />
               <div
-                className={`absolute coverage flex-vertical flex-center ${styles.overlay}`}
+                className={`absolute coverage flex-column flex-center ${styles.overlay}`}
               >
                 <div className="flex-horizontal">
                   <SocialButton

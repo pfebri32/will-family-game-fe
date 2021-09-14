@@ -7,7 +7,7 @@ import {
 import styles from './Home.module.css';
 
 // Components
-import Button from '../components/partials/Buttons/ButtonA';
+import Button from '../components/partials/Buttons/Button';
 import SocialButton from '../components/partials/Buttons/SocialButton';
 
 const Home = () => {
@@ -33,10 +33,10 @@ const Home = () => {
   };
 
   return (
-    <div className="container-fluid screen flex-vertical flex-center">
+    <div className="container-fluid screen flex-column flex-center">
       <div>
         <div className={styles.title}>WILL FAMILY GAME</div>
-        <div className="flex-vertical flex-center" style={{ marginTop: 15 }}>
+        <div className="flex-column flex-center" style={{ marginTop: 15 }}>
           <Button to="/pick" type="link">
             Start Game
           </Button>
@@ -45,7 +45,7 @@ const Home = () => {
         </div>
         <div style={{ marginTop: 15 }}>
           <div className="align-center font-weight-500">Share It</div>
-          <div className="flex-horizontal flex-center">
+          <div className="flex-row flex-center">
             <SocialButton
               icon={faFacebookSquare}
               onClick={onFacebookShareHandlers}

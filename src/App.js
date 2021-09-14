@@ -7,6 +7,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import PageNotFound from './pages/errors/PageNotFound';
 import Pick from './pages/PickGames';
+import Room from './pages/Room';
 
 // Stores
 import Store from './Store';
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} exact />
           <Route path="/pick" component={Pick} exact />
+          <Route path="/room" component={Room} exact />
           <Route path="*" component={PageNotFound} />
         </Switch>
       </BrowserRouter>
