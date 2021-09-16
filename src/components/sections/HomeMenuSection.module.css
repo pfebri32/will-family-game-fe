@@ -1,0 +1,13 @@
+.container {
+  display: block;
+  margin: auto;
+  max-width: 240px;
+}
+
+.container > * {
+  margin-bottom: 0.75rem;
+}
+
+.container > *:last-child {
+  margin-bottom: 0;
+}

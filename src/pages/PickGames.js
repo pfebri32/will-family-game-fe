@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import styles from './PickGames.module.css';
 
 // Components
-import Button from '../components/partials/Buttons/Button';
 import Search from '../components/partials/Inputs/Search';
 
 const PickGames = ({ games }) => {
@@ -16,21 +16,21 @@ const PickGames = ({ games }) => {
   const renderAvaibleGames = () =>
     games
       .filter(({ title }) => title.toLowerCase().includes(search.toLowerCase()))
-      .map(({ title }) => <Button>{title}</Button>);
+      .map(({ title }, index) => (
+        <Link key={index} className={styles.button} to="/">
+          {title}
+        </Link>
+      ));
   return (
-    <div
-      className="container-fluid screen flex-column"
-      style={{ paddingTop: '1rem', paddingBottom: '1rem' }}
-    >
-      <div>
-        <div className={styles.title}>PICK A GAME</div>
-        <div className="flex-column flex-center" style={{ marginTop: 15 }}>
-          <Search
-            placeholder="Search your game..."
-            onChange={onSearchHandler}
-          />
-        </div>
-        <div className="flex-column flex-center" style={{ marginTop: 15 }}>
+    <div className={`container ${styles.container}`}>
+      <div className={styles.title}>PICK A GAME</div>
+      <div className={styles.content}>
+        <Search
+          placeholder="Search the game..."
+          style={{ marginTop: '1.5rem' }}
+          onChange={onSearchHandler}
+        />
+        <div className={styles.games} style={{ marginTop: '1.5rem' }}>
           {renderAvaibleGames()}
         </div>
       </div>

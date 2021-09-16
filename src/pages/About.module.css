@@ -3,14 +3,27 @@ img {
   object-fit: contain;
 }
 
+.container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .content {
+  display: block;
+  margin: auto;
   max-width: 320px;
 }
 
 .description {
+  display: block;
   font-weight: 500;
+  margin: auto;
   max-width: 600px;
   text-align: center;
+}
+
+.image {
+  position: relative;
 }
 
 .name {
@@ -21,7 +34,17 @@ img {
 }
 
 .overlay {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
   transition: 250ms ease-in-out;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .overlay:hover {
@@ -37,6 +60,10 @@ img {
 .overlay:hover > div {
   opacity: 1;
   pointer-events: all;
+}
+
+.row > * {
+  width: unset;
 }
 
 .title {

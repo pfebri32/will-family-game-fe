@@ -10,8 +10,11 @@ const Player = ({ name, img, isReady, ...rest }) => {
           height: 80,
           width: 80,
           backgroundColor: 'gray',
+          marginRight: 'auto',
           marginBottom: 10,
+          marginLeft: 'auto',
           position: 'relative',
+          display: 'block',
         }}
       >
         <div className={`${styles.status} ${isReady && styles.ready}`}>

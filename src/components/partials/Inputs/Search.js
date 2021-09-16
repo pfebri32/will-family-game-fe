@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import styles from './Search.module.css';
 
-const index = ({ ...rest }) => {
+const Search = ({ style, ...rest }) => {
   return (
-    <div className={styles.container}>
-      <input className={styles.field} type="text" {...rest} />
+    <div className={styles.container} style={style}>
+      <input className={`form-control ${styles.field}`} type="text" {...rest} />
       <div className={styles.button}>
         <FontAwesomeIcon icon={faSearch} size="lg" />
       </div>
@@ -14,4 +14,4 @@ const index = ({ ...rest }) => {
   );
 };
 
-export default index;
+export default Search;

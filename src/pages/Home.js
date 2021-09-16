@@ -1,67 +1,35 @@
 import React from 'react';
-import {
-  faFacebookSquare,
-  faInstagramSquare,
-  faTwitterSquare,
-} from '@fortawesome/free-brands-svg-icons';
+import { useMediaQuery } from 'react-responsive';
 import styles from './Home.module.css';
 
 // Components
-import Button from '../components/partials/Buttons/Button';
-import SocialButton from '../components/partials/Buttons/SocialButton';
+import HomeMenuSection from '../components/sections/HomeMenuSection';
+import SocialSection from '../components/sections/SocialSection';
 
 const Home = () => {
-  // Handlers.
-  const onOptionsHandler = () => {
-    console.log('Options');
-  };
-
-  const onAboutsHandlers = () => {
-    console.log('Abouts');
-  };
-
-  const onFacebookShareHandlers = () => {
-    console.log('Facebook Share');
-  };
-
-  const onInstagramShareHandlers = () => {
-    console.log('Instagram Share');
-  };
-
-  const onTwitterShareHandlers = () => {
-    console.log('Twitter Share');
-  };
-
-  return (
-    <div className="container-fluid screen flex-column flex-center">
-      <div>
+  const isMobile = useMediaQuery({ query: '(max-width: 576px)' });
+  const renderTitle = () => (
+    <>
+      {!isMobile ? (
         <div className={styles.title}>WILL FAMILY GAME</div>
-        <div className="flex-column flex-center" style={{ marginTop: 15 }}>
-          <Button to="/pick" type="link">
-            Start Game
-          </Button>
-          <Button onClick={onOptionsHandler}>Options</Button>
-          <Button onClick={onAboutsHandlers}>About</Button>
+      ) : (
+        <div className={styles.title}>
+          WILL
+          <br />
+          FAMILY
+          <br />
+          GAME
         </div>
-        <div style={{ marginTop: 15 }}>
-          <div className="align-center font-weight-500">Share It</div>
-          <div className="flex-row flex-center">
-            <SocialButton
-              icon={faFacebookSquare}
-              onClick={onFacebookShareHandlers}
-              size="2x"
-            />
-            <SocialButton
-              icon={faInstagramSquare}
-              onClick={onInstagramShareHandlers}
-              size="2x"
-            />
-            <SocialButton
-              icon={faTwitterSquare}
-              onClick={onTwitterShareHandlers}
-              size="2x"
-            />
-          </div>
+      )}
+    </>
+  );
+  return (
+    <div className="container">
+      <div className={styles.content}>
+        <div>
+          {renderTitle()}
+          <HomeMenuSection style={{ marginTop: '1.5rem' }} />
+          <SocialSection style={{ marginTop: '1rem' }} />
         </div>
       </div>
     </div>

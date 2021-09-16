@@ -1,5 +1,5 @@
 pre {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 .button {
@@ -8,13 +8,7 @@ pre {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
-  min-width: 240px;
-}
-
-.button:last-child {
-  margin-bottom: 0;
 }

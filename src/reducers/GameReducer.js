@@ -5,6 +5,60 @@ const init = [
   {
     title: 'Jan-ken-pon',
   },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
+  {
+    title: 'Hear The Lyrics',
+  },
+  {
+    title: 'Jan-ken-pon',
+  },
 ];
 
 const GameReducer = (state = init, _) => {
